@@ -21,10 +21,10 @@ jQuery(function ($) {
   var ContactFormApp = {
     $contactForm: $("#ajax-form"),
     $contactFormBtn: $("#send"),
-    $contactFormName: $("#name2"),
-    $contactFormEmail: $("#email2"),
+    $contactFormName: $("#name"),
+    $contactFormEmail: $("#email"),
     $contactForPhone: $("#phone"),
-    $contactFormMessage: $("#message2"),
+    $contactFormMessage: $("#message"),
     $confirmMessage: $("#ajaxsuccess"),
     $errorMessages: $(".error"),
     $errorName: $("#err-name"),

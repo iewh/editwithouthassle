@@ -347,73 +347,65 @@
               role="form"
               name="ajax-form"
               id="ajax-form"
-              action="php/contact.php"
+              action="mailto:deepanshusharmaofficial@gmail.com"
               method="post"
               class="form-main"
             >
               <div class="col-xs-12">
                 <div class="row">
                   <div class="form-group col-xs-6">
-                    <label for="name2">Name</label>
+                    <label for="name">Name</label>
                     <input
-                      class="form-control"
-                      id="name2"
-                      name="name"
-                      onblur="if(this.value == '') this.value='Name'"
-                      onfocus="if(this.value == 'Name') this.value=''"
                       type="text"
-                      value="Name"
+                      class="form-control py-4"
+                      name="name"
+                      id="name"
+                      placeholder="Your Name *"
+                      required
                     />
                     <div class="error" id="err-name" style="display: none">
                       Please enter name
                     </div>
                   </div>
                   <div class="form-group col-xs-6">
-                    <label for="email2">Email</label>
+                    <label for="email">Email</label>
                     <input
-                      class="form-control"
-                      id="email2"
-                      name="email"
                       type="text"
-                      onfocus="if(this.value == 'E-mail') this.value='';"
-                      onblur="if(this.value == '') this.value='E-mail';"
-                      value="E-mail"
+                      class="form-control py-4"
+                      name="email"
+                      id="email"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      title="Enter a valid E-mail."
+                      placeholder="Your E-mail *"
+                      required
                     />
-                    <div class="error" id="err-emailvld" style="display: none">
-                      E-mail is not a valid format
-                    </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-group col-xs-6">
                     <label for="phone">Phone</label>
                     <input
-                      class="form-control"
-                      id="phone"
+                      class="form-control py-4"
                       name="phone"
-                      onfocus="if(this.value == 'Phone') this.value='';"
-                      onblur="if(this.value == '') this.value='Phone';"
-                      value="Phone"
+                      id="phone"
+                      placeholder="Your Mobile number *"
+                      pattern="[6-9][0-9]{9}"
+                      maxlength="10"
+                      title="Enter a valid Mobile number."
+                      required
                     />
-                    <div class="error" id="err-phonevld" style="display: none">
-                      Phone is invalid
-                    </div>
                   </div>
 
                   <div class="form-group col-xs-12">
-                    <label for="message2">Message</label>
+                    <label for="message">Message</label>
                     <textarea
-                      class="form-control"
-                      id="message2"
-                      name="message"
-                      onblur="if(this.value == '') this.value='Message'"
-                      onfocus="if(this.value == 'Message') this.value=''"
-                    >
-Message</textarea
-                    >
-                    <div class="error" id="err-message" style="display: none">
-                      Please enter message
-                    </div>
+                      type="text"
+                      class="form-control py-4"
+                      name="name"
+                      id="name"
+                      placeholder="Your Message *"
+                      required
+                    ></textarea>
                   </div>
                 </div>
 
