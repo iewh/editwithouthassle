@@ -595,3 +595,8 @@ ul.pattern .color12 {
     display: none;
   }
 }
+
+iframe {
+  width: 320px;
+  height: 240px;
+}
