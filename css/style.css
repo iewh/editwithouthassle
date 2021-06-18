@@ -597,6 +597,12 @@ ul.pattern .color12 {
 }
 
 iframe {
-  width: 320px;
+  width: 100%;
+  /* width: 320px; */
   height: 240px;
+}
+
+#status {
+  font-size: 22px;
+  margin-top: 10px;
 }
