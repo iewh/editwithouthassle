@@ -1,6 +1,7 @@
 var form = document.getElementById("contactForm");
 
 async function handleSubmit(event) {
+  console.log("event", event);
   event.preventDefault();
   var status = document.getElementById("status");
   var data = new FormData(event.target);
