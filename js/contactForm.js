@@ -13,6 +13,10 @@ async function handleSubmit(event) {
       // SUCCESS
       status.innerHTML = "Thanks for your submission! We'll get back to you.";
       form.reset();
+
+      setTimeout(() => {
+        status.innerHTML = "";
+      }, 5000);
     } else {
       // ERROR
       status.innerHTML = "Oops! server error, Please Try again later.";
