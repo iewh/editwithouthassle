@@ -1,0 +1,6 @@
+#Removes file extentions from URL
+RewriteEngine On
+RewriteCond %{https://editwithouthassle.com/about.html} !-f
+RewriteCond %{https://editwithouthassle.com/index.html} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

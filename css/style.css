@@ -247,6 +247,18 @@ section {
 
 /* 5 Navigation
 ----------------------------------------------------------------------------- */
+.about-navbar-custom {
+  background: #673ab7;
+  margin-bottom: 0px;
+  z-index: 1000;
+  border: none;
+  color: #333;
+  position: fixed;
+  transition: background-color 1s ease-in-out, border 1s ease-in-out;
+  -moz-transition: background-color 1s ease-in-out, border 1s ease-in-out;
+  -webkit-transition: background-color 1s ease-in-out, border 1s ease-in-out;
+  -o-transition: background-color 1s ease-in-out, border 1s ease-in-out;
+}
 .navbar-custom {
   background: transparent;
   margin-bottom: 0px;
