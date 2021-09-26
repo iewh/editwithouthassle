@@ -247,18 +247,7 @@ section {
 
 /* 5 Navigation
 ----------------------------------------------------------------------------- */
-.about-navbar-custom {
-  background: #673ab7;
-  margin-bottom: 0px;
-  z-index: 1000;
-  border: none;
-  color: #333;
-  position: fixed;
-  transition: background-color 1s ease-in-out, border 1s ease-in-out;
-  -moz-transition: background-color 1s ease-in-out, border 1s ease-in-out;
-  -webkit-transition: background-color 1s ease-in-out, border 1s ease-in-out;
-  -o-transition: background-color 1s ease-in-out, border 1s ease-in-out;
-}
+
 .navbar-custom {
   background: transparent;
   margin-bottom: 0px;
@@ -325,6 +314,17 @@ nav.small {
 }
 .home-page-photo {
   background-image: url(../images/bg-5.jpg);
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.about-page-photo {
+  background-image: url(../images/EWH\ About\ Banner.png);
   background-size: cover;
   z-index: -1;
   position: absolute;
@@ -619,19 +619,56 @@ iframe {
   margin-top: 10px;
 }
 
-.back-to-home-styles{
+.back-to-home-styles {
   font-size: 14px;
-  color: #e3e3e3;
   margin-top: 13px;
-  font-family: 'Kameron', serif;
-  font-weight: 700;
+  text-transform: uppercase;
+  /* font-weight: 700; */
 }
 
-.about-me-heading{
-  margin: top;
-  margin-top: 314px;
+.about-me-heading {
+  margin-top: 150px;
   font-weight: 900;
   color: black;
-  font: 42px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 42px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.about-me-border {
+  border-bottom: 3px solid rgb(40, 99, 167);
+  width: 30%;
+  float: left;
+}
+
+.about-text {
+  padding-left: 0px;
+  text-align: justify;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+@media (min-width: 960px) {
+  .about-text {
+    margin-right: 185px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-text {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .img-margin{
+margin-top: 30px;
+  }
 }
